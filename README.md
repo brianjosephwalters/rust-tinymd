@@ -5,6 +5,7 @@ Following:
 ### Take Aways:
 * Ch 2: Functions, return/early return, expression-based languages.
 * Ch 3: heap-alloctated/stack-allocated strings (String vs. &str), env! macro, the borrow checker
+* Ch 4: commandline arguments, assignment moves the value not just copies it, match, passing arguments to functions, 
 
 ### Notes:
 *  Really like this website.
