@@ -1,11 +1,9 @@
 
 fn usage() {
+    let mut the_version = env!("CARGO_PKG_VERSION");
+    the_version = "2.0";
     println!("tindymd, a markdown compiler written by Brian.");
-    println!("Version {}", get_version());
-}
-
-fn get_version() -> u16 {
-    1000
+    println!("Version {}", the_version);
 }
 
 fn main() {
