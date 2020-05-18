@@ -10,3 +10,6 @@ Following:
 
 ### Notes:
 *  Really like this website.
+*  The parsing logic seems unnecessarily complicated for these markup symbols.
+*  Does Rust have a streaming/yield syntax where the input could be passed along and written before the entire file has even been read?
+*  How do to unit testing in Rust?
