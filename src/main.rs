@@ -1,6 +1,6 @@
 use std::path::Path;
 use std::fs::File;
-use std::io::{BufRead, BufReader};
+use std::io::{BufRead, BufReader, Write};
 
 fn get_title() -> String {
     let mut the_title = String::from(env!("CARGO_PKG_NAME"));
@@ -70,10 +70,14 @@ fn parse_markdown_file(_filename: &str) {
         }
     }
 
-    for token in &tokens {
-        print!("{}", token);
+    let mut output_filename = String::from(&_filename[..(_filename.len() - 3)]);
+    output_filename.push_str(".html");
+    let mut outfile = File::create(output_filename.to_string()).expect("[ ERROR ] Could not create output file.");
+    for line in &tokens {
+        outfile.write_all(line.as_bytes()).expect("[ ERROR ] Could not write to output file.");
     }
 
+    println!("[ INFO ] Parsing complete!");
 }
 
 fn print_short_banner() {
