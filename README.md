@@ -6,6 +6,7 @@ Following:
 * Ch 2: Functions, return/early return, expression-based languages.
 * Ch 3: heap-alloctated/stack-allocated strings (String vs. &str), env! macro, the borrow checker
 * Ch 4: commandline arguments, assignment moves the value not just copies it, match, passing arguments to functions, 
+* Ch 5: Path/File, expect() unwraps Result type, panic!() respects return type of open(), Buffered Readers, ignoring the err path when unwrapping by unwrap(), Option (Some() and None()),
 
 ### Notes:
 *  Really like this website.
